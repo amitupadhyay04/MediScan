@@ -1,0 +1,85 @@
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+  }
+  
+  .page-content {
+    width: calc(100%-17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+  }
+  
+  #sidebar.active {
+    margin-left: -17rem;
+  }
+  
+  #content.active {
+    width: 100%;
+    margin: 0%;
+  }
+  
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+  
+  .text-gray {
+    color: #aaa;
+  }
+  
+  .nav-link {
+    text-transform: capitalize;
+  }
+  
+  .nav-link:hover {
+    background: #e8ecf6;
+  }
+  
+  /* Other Styles */
+  .div12 {
+    background-color: #e8ecf6;
+    padding: 10px;
+    margin-top: -45px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    height: 100px;
+  }
+  
+  .lightpurple {
+    background-color: #b1b4dc;
+    text-align: center;
+  }
+  
+  .lightgreen {
+    background-color: rgb(167, 242, 216);
+    text-align: center;
+  }
+  
+  .four1 {
+    margin-left: 90%;
+    margin-right: 20%;
+    margin-top: -183px;
+    width: 8%;
+  }
+  
+  .five1 {
+    margin-left: 90%;
+    margin-right: 20%;
+    margin-top: -240px;
+    width: 8%;
+  }
+  
+  /* Add the remaining CSS from your style tag here */
+  
