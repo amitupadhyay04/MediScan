@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="custom-footer">
       <div className="footer-container">
-        <p>All Rights Reserved, Copyright © 2023</p>
+        <p>All Rights Reserved, Copyright © 2024</p>
         <ul className="footer-links">
           <li><Link to="#" className="footer-link">Privacy Policy</Link></li>
           <li><Link to="#" className="footer-link">Terms of Use</Link></li>

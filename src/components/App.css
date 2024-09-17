@@ -24,6 +24,10 @@ body {
     top: 0;
     left: 0;
   }
+  .white1{
+    background-color: rgb(255, 255, 255);
+    border-color: #515b9d;
+}
   
   .lightpurple {
     background-color: #b1b4dc;
@@ -46,6 +50,9 @@ body {
     margin-left: 30px;
     font-size: 15px;
     margin-top: -15px;
+    z-index: 1000;
+    position: relative;
+    pointer-events: auto; 
   }
   
   .alignscan {
@@ -88,9 +95,11 @@ body {
   
   /* General navbar styles */
 .custom-navbar {
-    margin: 20px;
-    margin-left: 150px;
-    background-color: #fff; /* Add your preferred background color */
+    margin: 5px;
+    padding: 5px;
+    background-color: transparent;
+    /* background-color: rgb(255, 255, 255); */
+     /* Add your preferred background color */
   }
   
   .navbar-nav .nav-link {
@@ -110,8 +119,8 @@ body {
   }
   
   .navbar-brand img {
-    width: 170px;
-    height: 40px;
+    width: 220px;
+    height: 150px;
   }
   
   /* General styles for the login page */

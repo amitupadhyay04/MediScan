@@ -4,10 +4,10 @@ import './App.css'; // Import the main CSS file for shared styles
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg fixed-top flex-md-nowrap p-0 shadows white2 custom-navbar">
+    <nav className="navbar navbar-expand-lg fixed-top flex-md-nowrap p-0 shadows white2 custom-navbar" style={{ margin: '20px', marginLeft: '70px' }}>
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img src="/static/logo.png" alt="Bootstrap" width="170" height="40" />
+          <img src="/static/logo.png" alt="Bootstrap" width="100" height="150" />
         </Link>
         <button
           className="navbar-toggler"
