@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './Header'; // Assuming you've created Header.js
 import Footer from './Footer'; // Assuming you've created Footer.js
 import axios from 'axios';
+import './App.css'; // Import your main CSS file
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -36,7 +37,7 @@ const Signup = () => {
   return (
     <div>
       <Header />
-      <div className="container jumbotron p-5">
+      <div className="container jumbotron p-5 signup-container">
         <h1 className="text-center">Create your Account</h1>
         <br />
 
@@ -131,8 +132,8 @@ const Signup = () => {
             </div>
           </div>
 
-          <button type="submit" className="btn btn-light purple1 center" style={{ backgroundColor: '#515b9d' }}>
-            <p style={{ color: '#fff', marginBottom: 0 }}>Submit</p>
+          <button type="submit" className="btn btn-light purple1 center signup-submit-btn">
+            <p className="signup-submit-text">Submit</p>
           </button>
         </form>
       </div>

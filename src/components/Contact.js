@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Header from './Header'; // Assuming you have Header.js
-import Footer from './Footer'; // Assuming you have Footer.js
+import Header from './Header';
+import Footer from './Footer';
+import './App.css'; // Import the main CSS file for shared styles
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +22,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle the form submission logic here
     console.log('Form submitted:', formData);
   };
 
@@ -29,18 +29,18 @@ const Contact = () => {
     <div>
       <Header />
 
-      <div className="row p-5">
+      <div className="contact-row row p-5">
         <div className="col-5">
           <div className="shiftleftimg2">
-            <img src="/static/map.jpeg" alt="Map" height="500px" width="450px" style={{ marginLeft: '150px' }} />
+            <img src="/static/map.jpeg" alt="Map" className="contact-map" />
           </div>
         </div>
 
         <div className="col-7">
-          <h1 style={{ fontSize: '60px', marginLeft: '140px' }}>Get in touch with us.</h1>
-          <p style={{ color: 'rgb(95, 95, 95)', fontSize: '20px', marginLeft: '140px' }}>Contact us in any way you choose.</p>
+          <h1 className="contact-heading">Get in touch with us.</h1>
+          <p className="contact-subheading">Contact us in any way you choose.</p>
 
-          <table className="table table-borderless" style={{ marginLeft: '140px' }}>
+          <table className="table table-borderless contact-table">
             <tbody>
               <tr>
                 <th>Phone number</th>
@@ -64,10 +64,10 @@ const Contact = () => {
       </div>
 
       <div className="container">
-        <h1 style={{ fontSize: '60px', marginLeft: '100px' }}>Or ask us to get in touch with you.</h1>
-        <p style={{ color: 'rgb(95, 95, 95)', fontSize: '20px', marginLeft: '100px' }}>Choose how you would like to hear from Dr. Salunke's.</p>
+        <h1 className="contact-heading-small">Or ask us to get in touch with you.</h1>
+        <p className="contact-subheading-small">Choose how you would like to hear from Dr. Salunke's.</p>
 
-        <form onSubmit={handleSubmit} style={{ marginRight: '150px' }}>
+        <form onSubmit={handleSubmit} className="contact-form">
           <div className="mb-3 leftside">
             <label htmlFor="firstName" className="form-label">First Name</label>
             <input
@@ -128,8 +128,8 @@ const Contact = () => {
             />
           </div>
 
-          <button type="submit" className="btn btn-light white1 center leftside" style={{ width: '70px', borderColor: '#646464' }}>
-            <h4 style={{ fontSize: '15px', margin: '4px', color: 'rgb(100, 55, 184)' }}>Send</h4>
+          <button type="submit" className="btn btn-light contact-button">
+            <h4 className="contact-button-text">Send</h4>
           </button>
         </form>
       </div>

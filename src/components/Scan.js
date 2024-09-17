@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './Header'; // Assuming you've created Header.js
 import Footer from './Footer'; // Assuming you've created Footer.js
 import axios from 'axios';
+import './App.css'; // Import your main CSS file
 
 const Scan = () => {
   const [email, setEmail] = useState('');
@@ -34,19 +35,17 @@ const Scan = () => {
   return (
     <div>
       <Header />
-      <div className="container py-5 display-4" style={{ display: 'flex', justifyContent: 'center' }}>
-        <span className="badge text-bg-light">
-          <h4 className="m-0 p-0" style={{ fontSize: '15px', margin: '3.5px', color: 'rgb(51, 51, 51)' }}>ScanPlus+</h4>
+      <div className="scan-header-container">
+        <span className="badge text-bg-light scan-badge">
+          <h4 className="scan-header">ScanPlus+</h4>
         </span>
       </div>
 
       <div className="container">
-        <h1 style={{ fontSize: '60px', textAlign: 'center' }}>ScanPlus+</h1>
-        <p style={{ color: 'rgb(95, 95, 95)', fontSize: '20px', textAlign: 'center' }}>
-          Upload a clear picture of your prescription.
-        </p>
+        <h1 className="scan-title">ScanPlus+</h1>
+        <p className="scan-description">Upload a clear picture of your prescription.</p>
 
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+        <form onSubmit={handleSubmit} className="scan-form">
           <div className="mb-3">
             <label className="form-label">Enter email</label>
             <input
@@ -68,8 +67,8 @@ const Scan = () => {
             />
           </div>
 
-          <button type="submit" className="btn btn-light purple1 center" style={{ backgroundColor: 'rgb(100, 55, 184)', display: 'flex', justifyContent: 'center' }}>
-            <h4 style={{ fontSize: '15px', color: '#fff', textAlign: 'center' }}>Upload</h4>
+          <button type="submit" className="btn btn-light purple1 scan-btn">
+            <h4 className="scan-btn-text">Upload</h4>
           </button>
         </form>
       </div>
